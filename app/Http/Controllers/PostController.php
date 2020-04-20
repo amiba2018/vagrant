@@ -53,7 +53,7 @@ class PostController extends Controller
     {
         dd($request->all());
 
-            // \Log::info($request->all());
+        // \Log::info($request->all());
     
             // $date = date('Y-m-d H:i:s');
             // $responseText = 'debug method are called at ' . $date;
