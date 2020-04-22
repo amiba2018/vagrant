@@ -16,11 +16,11 @@ class PostController extends Controller
      */
     // public function index(Request $request)
     // {
-    //     dd($request);
-    //     $responseUrl = $request->input('response_url');
-    //     dd($responseUrl);
-    //     $posts = Post::all();
-    //     return $posts;
+        // dd($request);
+        // $responseUrl = $request->input('response_url');
+        // dd($responseUrl);
+        // $posts = Post::all();
+        // return $posts;
         // return Post::latest()->paginate();
     // }
 
@@ -51,10 +51,11 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
-        dd($request->all());
-
-        // \Log::info($request->all());
-    
+        // dd($request->all());
+        \Log::info($request->text);
+        // if ($request->text == test) return true;
+    //    return \Log::info($request->all());
+    // exit;
             // $date = date('Y-m-d H:i:s');
             // $responseText = 'debug method are called at ' . $date;
             // return response()->json(['text'=>$responseText]);
