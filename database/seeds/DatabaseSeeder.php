@@ -7,6 +7,6 @@ class DatabaseSeeder extends Seeder
 {
    public function run()
    {
-       $this->call(WordsTableSeeder::class); //●
+       $this->call(WordsTableSeeder::class); 
    }
 }

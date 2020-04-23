@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Word;
 
 class WordsTableSeeder extends Seeder
 {
@@ -11,19 +12,16 @@ class WordsTableSeeder extends Seeder
      */
     public function run()
     {
-        $param = [
-            'word' => '1:ごっつえやん！',
-        ];
-        DB::table('words')->insert($param);
-     
-        $param = [
-            'word' => '1:ナイス',
-        ];
-        DB::table('words')->insert($param);
-     
-        $param = [
-            'word' => '2:ドンマイ!',
-        ];
-        DB::table('words')->insert($param);
+        Word::create([
+            "word"  => '1:ごっつえやん！',
+        ]);
+
+        Word::create([
+            "word"  => '1:ナイス！',
+        ]);
+
+        Word::create([
+            "word"  => '2:ドンマイ！',
+        ]);
     }
 }
